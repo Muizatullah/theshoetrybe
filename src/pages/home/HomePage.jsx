@@ -1,9 +1,10 @@
-import {} from "../../components/index.jsx";
+import {Navbar, Hero,} from "../../components/index.jsx";
 
  const HomePage = () => {
 return (
     <div>
         <Navbar />
+        <Hero />
     </div>
 )
  }
