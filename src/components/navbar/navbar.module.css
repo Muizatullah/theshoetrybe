@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
+  background: #2B211A;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   padding: 0;
@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-/* Logo */
+
 .logo {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   display: block;
 }
 
-/* Navigation Links */
+
 .navLinks {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   position: relative;
   font-weight: 500;
   text-decoration: none;
-  color: #0F172A;
+  color: #8b4513;
   transition: color 0.3s ease;
   cursor: pointer;
   display: flex;
@@ -83,7 +83,7 @@
   width: 100%;
 }
 
-/* Auth Buttons */
+
 .navButton {
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@
   color: white;
 }
 
-/* Mobile Menu Button */
+
 .menuToggle {
   display: none;
   background: none;
@@ -139,7 +139,55 @@
   z-index: 1001;
 }
 
-/* Desktop - show everything */
+
+
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.iconButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-thread);
+  cursor: pointer;
+  padding: 6px;
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid var(--color-tan);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background-color: var(--color-oxblood);
+  border: 1px dashed var(--color-thread);
+  color: var(--color-thread);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+}
+
+
+
+
+
 @media (min-width: 769px) {
   .menuToggle {
     display: none !important;
@@ -161,7 +209,7 @@
   }
 }
 
-/* Tablet & Mobile */
+
 @media (max-width: 768px) {
   .navContainer {
     padding: 12px 1rem;
@@ -205,7 +253,7 @@
   }
 }
 
-/* Small Mobile */
+
 @media (max-width: 480px) {
   .logoImage {
     width: 120px;
