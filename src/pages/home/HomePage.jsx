@@ -1,4 +1,4 @@
-import  {Navbar, Hero, Footer} from "../../components/index.jsx";
+import  {Navbar, Hero, Footer, Home} from "../../components/index.jsx";
 
  const HomePage = () => {
 return (
@@ -7,6 +7,7 @@ return (
         <Navbar />
         <Hero />
         <Footer />
+        <Home />
        
     </div>
 )
