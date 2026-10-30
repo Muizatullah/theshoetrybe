@@ -1,0 +1,203 @@
+
+.adminApp {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f7f4;
+}
+
+.sidebar {
+  width: 245px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 30px 18px 20px;
+  background: #fff;
+  border-right: 1px solid var(--color-border);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.logo span {
+  display: inline;
+  color: var(--color-brown);
+}
+
+.logo small {
+  margin-top: 7px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  color: var(--color-muted);
+}
+
+.label {
+  margin: 48px 0 15px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--color-muted);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 12px;
+  border-radius: 8px;
+  color: #77766f;
+  font-size: 13px;
+}
+
+.navLink:hover {
+  background: var(--color-cream);
+}
+
+.active {
+  color: var(--color-green);
+  background: #e9ede2;
+  font-weight: 700;
+}
+
+.bottom {
+  margin-top: auto;
+  display: grid;
+  gap: 12px;
+}
+
+.storeLink,
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 9px;
+  font-size: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+}
+
+.storeLink {
+  color: var(--color-green);
+  background: #edf0e7;
+}
+
+.logout {
+  color: #bd5d4d;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  min-height: 86px;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.topbar p {
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.topbar > div:first-child > span {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.adminBadge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adminBadge > span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-green);
+  color: white;
+  font-size: 12px;
+}
+
+.adminBadge div {
+  display: grid;
+  gap: 3px;
+}
+
+.adminBadge strong {
+  font-size: 12px;
+}
+
+.adminBadge small {
+  font-size: 10px;
+  color: var(--color-muted);
+}
+
+.content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    width: 190px;
+    padding: 24px 12px;
+  }
+
+  .topbar {
+    padding: 16px;
+  }
+
+  .content {
+    padding: 20px 16px;
+  }
+
+  .adminBadge div {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 155px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navLink {
+    gap: 8px;
+    padding: 12px 7px;
+    font-size: 11px;
+  }
+}

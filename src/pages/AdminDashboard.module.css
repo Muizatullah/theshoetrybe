@@ -1,0 +1,80 @@
+
+
+
+.dashboard {
+  display: grid;
+  gap: 28px;
+}
+
+.heading h1 {
+  font-size: 32px;
+}
+
+.eyebrow {
+  color: #7b856b;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.heading > div > p:last-child {
+  color: #89877f;
+}
+
+.storeButton {
+  display: inline-flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #455747;
+  color: white;
+  border-radius: 8px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.statCard,
+.panel {
+  padding: 20px;
+  background: white;
+  border: 1px solid #ece9e2;
+  border-radius: 12px;
+}
+
+.statTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #77766f;
+}
+
+.statCard strong {
+  display: block;
+  margin: 20px 0 8px;
+  font-size: 28px;
+}
+
+.statCard p,
+.emptyState p {
+  color: #89877f;
+  font-size: 12px;
+}
+
+.emptyState {
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
